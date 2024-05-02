@@ -1,3 +1,3 @@
 module "tf-module" {
-  source = "../env-dev/"
+  source = "./vendor/modules/vpc"
 }
