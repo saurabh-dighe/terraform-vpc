@@ -3,29 +3,29 @@ output "VPC_ID" {
 }
 
 output "DEFAULT_VPC_ID" {
-  value = var.DEFAULT_VPC_ID
+  value = module.tf-module.DEFAULT_VPC_ID
 }
 
 output "VPC_CIDR" {
-  value = data.aws_vpc.roboshop_dev.cidr_block
+  value = module.tf-module.VPC_CIDR
 }
 
 output "DEFAULT_VPC_CIDR" {
-  value = var.DEFAULT_VPC_CIDR
+  value = module.tf-module.DEFAULT_VPC_CIDR
 }
 
 output "PRIVATE_SUBNET_ID" {
-  value = data.aws_subnet.private_subnet.*.id
+  value = module.tf-module.PRIVATE_SUBNET_ID
 }
 
 output "PUBLIC_SUBNET_ID" {
-  value = data.aws_subnet.public_subnet.*.id
+  value = module.tf-module.PUBLIC_SUBNET_ID
 }
 
 output "PRIVATE_SUBNET_CIDR" {
-  value = data.aws_subnet.private_subnet.cidr_block
+  value = module.tf-module.PRIVATE_SUBNET_CIDR
 }
 
 output "PUBLIC_SUBNET_CIDR" {
-  value = data.aws_subnet.public_subnet.cidr_block
+  value = module.tf-module.PUBLIC_SUBNET_CIDR
 }
