@@ -7,3 +7,5 @@ gp; terrafile -f ./env-dev/Terrafile; terraform init --backend-config=env-dev/ba
 terraform plan --var-file env-dev/dev.tfvars
 
 terraform apply -auto-approve --var-file env-dev/dev.tfvars
+
+gp; terrafile -f ./env-dev/Terrafile; terraform init --backend-config=env-dev/backend-dev.tfvarsterraform; plan --var-file env-dev/dev.tfvars; terraform apply -auto-approve --var-file env-dev/dev.tfvars
