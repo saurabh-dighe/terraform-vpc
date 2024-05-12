@@ -29,3 +29,16 @@ output "PRIVATE_SUBNET_CIDR" {
 output "PUBLIC_SUBNET_CIDR" {
   value = module.tf-module.PUBLIC_SUBNET_CIDR
 }
+
+output "PRIVATE_HOSTEDZONE_ID" {
+  value = module.tf-module.PRIVATE_HOSTEDZONE_ID
+}
+output "PRIVATE_HOSTEDZONE_NAME" {
+  value = module.tf-module.PRIVATE_HOSTEDZONE_NAME
+}
+output "PUBLIC_HOSTEDZONE_ID" {
+  value = var.PUBLIC_HOSTEDZONE_ID
+}
+output "PUBLIC_HOSTEDZONE_NAME" {
+  value = var.PUBLIC_HOSTEDZONE_NAME
+}
